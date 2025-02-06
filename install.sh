@@ -46,3 +46,8 @@ echo "Done! Grab some wallpaper and run pywal -i filename to set your color sche
 echo "After reboot: Select i3 on login, run lxappearance and select arc-dark"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo "autoload -Uz compinit" >> ~/.zshrc
+echo "compinit" >> ~/.zshrc
+echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
